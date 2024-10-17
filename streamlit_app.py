@@ -127,7 +127,7 @@ def dl3():
   runShell('chmod +x /tmp/cloudflared')
   return 'download cloudflared!'
 
-@app.route('/st')
+# @app.route('/st')
 def st():
   sh = """
 cd /tmp
@@ -197,4 +197,5 @@ def sh_str(id):
 
 # app.run(host='0.0.0.0', port=int(os.getenv('PORT') or '8080'))
 # app.run(host='0.0.0.0', port=int(os.getenv('PORT') or '3000'))
-app.run(host='0.0.0.0', port=18501)
+print(st())
+# app.run(host='0.0.0.0', port=18501)
